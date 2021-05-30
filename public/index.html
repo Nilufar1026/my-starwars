@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://kit.fontawesome.com/b160f7bbaf.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
+    <link rel="stylesheet" href="./stylesheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ropa+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <title>Star Wars Catalog</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <img src="./assets/logo.jpg" alt="logo">
+            <div class="search">
+                <div class="input-icons">
+                    <input type="text" class="inputField" placeholder="Search names">
+                    <ul id="input_lists" class="hidden"></ul>
+                </div> 
+                <button id="searchChar">Search</button>
+            </div>
+            
+        </header>
+        <main>
+            <div class="container">
+                <div class="characters">
+                    <h2>CHARACTERS</h2>
+                    <ul id="char_lists" >
+                        <li class="char-0 light" ></li>
+                        <li class="char-1 dark" ></li>
+                        <li class="char-2 light"></li>
+                        <li class="char-3 dark"></li>
+                        <li class="char-4 light"></li>
+                        <li class="char-5 dark"></li>
+                        <li class="char-6 light"></li>
+                        <li class="char-7 dark"></li>
+                        <li class="char-8 light"></li>
+                        <li class="char-9 dark"></li>                        
+                        <div class="prev-next">
+                            <div class="prev">
+                                <i class="fas fa-caret-left"></i>  
+                            </div>
+                            <div class="pages"></div>
+                            <div class="next">
+                                 <i class="fas fa-caret-right"></i>
+                            </div>    
+                        </div>
+                    </ul>
+                </div>
+
+                <div class="details">
+                    <h2>DETAILS</h2>
+                    <div id="loader_details">
+                        <p class="name clear"></p>
+                        <p class="height clear"></p>
+                        <p class="mass clear"></p>
+                        <p class="hair_color clear"></p>
+                        <p class="skin_color clear"></p>
+                        <p class="eye_color clear"></p>
+                        <p class="birth_year clear"></p>
+                        <p class="gender clear"></p>
+                    </div> 
+                    <div id="loader_planet">
+                        <p class="name_planet clear"></p>
+                        <p class="planet_details rotation_period clear"></p>
+                        <p class="planet_details orbital_period clear"></p>
+                        <p class="planet_details diameter clear"></p>
+                        <p class="planet_details climate clear"></p>
+                        <p class="planet_details gravity clear"></p>
+                        <p class="planet_details terrain clear"></p> 
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            
+        </footer>
+
+        
+
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
